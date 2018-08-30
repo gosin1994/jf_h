@@ -177,3 +177,41 @@
 .bgImgDiv2{
 	background-color: #EEEEEE;
 }
+/*bg8大优势*/
+.bgImgDiv6{
+	background-color: #F6EEE5;
+}
+.bgImgDiv7{
+	background-color: #F6EEE5;
+}
+.bgImgDiv8{
+	width: 100%;
+	height: 50px;
+	background-color: #F6EEE5;
+}
+/*footer样式*/
+.footer{
+	width: 100%;
+	height: 200px;
+	background-color: #000000;
+}
+.footer_img{
+	margin: 0 auto;
+}
+.footer_link{
+	margin: 0 auto;
+	color: white;
+}
+.footer_cr{
+	margin: 0 auto;
+	color: #555;
+}
+
+.footer_link a:hover{
+	color: red;
+	text-decoration: none;
+}
+.footer_link a:link{
+	color: #F9F9F9;
+}
+/*footer样式结束*/
