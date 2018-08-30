@@ -1,0 +1,179 @@
+/*.wraper{width:1000px;padding-top:100px;margin:0 auto}
+.nav{position:relative;width:100%;height:40px;background:#C70757;overflow:hidden}
+.nav-item{position:relative;float:left;width:120px;height:40px;line-height:40px;text-align:center;font-size:14px;z-index:1}
+.nav-item a{display:block;height:40px;color:#fff;}
+.nav-item a:hover{color:#fff}
+.move-bg{display:none;position:absolute;left:0;top:0;width:120px;height:40px;background:#4D0B33;z-index:0}*/
+.viewpager{
+	
+}
+/*测评标题*/
+.block-title{
+	color: red;
+	font-size: 40px;
+	text-align: center;
+}
+/*测评form表单*/
+.form-block{
+	width: 80%;
+	margin:0 auto;
+	
+	
+}
+/*评论输入框*/
+.form-control-input{
+	width: 300px;
+	height: 35px;
+	border-radius:8px;
+	border: 0.5px solid #DBDBDB;
+	outline:none;
+}
+/*评论标题*/
+.title{
+	font-size: 15px;
+}
+.ceping2{
+	padding: 20px;
+	-webkit-box-shadow: #666 0px 0px 10px;
+    -moz-box-shadow: #666 0px 0px 10px;
+    box-shadow: #666 0px 0px 10px;
+    background: #EEFF99;
+}
+.box_left{
+	padding: 45px;
+	-webkit-box-shadow: #666 0px 0px 10px;
+    -moz-box-shadow: #666 0px 0px 10px;
+    box-shadow: #666 0px 0px 10px;
+    background: #EEFF99;
+}
+/*总的测评*/
+.totalForm{
+	margin: 0 auto;
+	width: 80%;
+	height: 410px;
+	padding-top: 20px;
+	background-color: white;
+	-webkit-box-shadow: #666 0px 0px 10px;
+    -moz-box-shadow: #666 0px 0px 10px;
+    box-shadow: #666 0px 0px 10px;
+}
+/*左边测评表单*/
+.totalForm_left{
+	margin: 0 auto;
+	width: 50%;
+	height: 500px;
+	float: left;
+	padding-left: 20px;
+}
+
+/*右边滚动显示*/
+.totalForm_right{
+	width: 50%;
+	height: 500px;
+	float: right;
+	padding-right: 20px;
+}
+/*form背景div1*/
+.bgdiv1{
+	width: 100%;
+	height: 300px;
+}
+/*form背景div2*/
+.bgdiv2{
+	width: 100%;
+	height: 230px;
+	background-color: lightskyblue;
+}
+/*form 提交按钮样式*/
+.formbt{
+	font-size: 20px;
+	color: white;	
+	margin: 0 auto;
+	background: #FF6805;
+	border:0px;
+	height:40px;
+	width:110px;
+	border-radius:8px;
+}
+/*form 表单div*/
+.formBtDiv{
+	margin:0 auto;
+	float: right;
+}
+/*背景图片样式*/
+.bgImgDiv{
+  	
+}
+/*绿色通道总*/
+.greenChan{
+	width: 79%;
+	height: 400px;
+	margin: 0 auto;
+	border: gainsboro;
+	border: 5px solid gainsboro;
+	
+}
+/*绿色通道左边*/
+.greenChan_left{
+	text-align: center;
+	width: 50%;
+	height: 400px;
+	float: left;
+	
+}
+/*绿色通道右边*/
+.greenChan_right{
+	text-align: center;
+	margin-top: 5px;
+	margin-right: 5px;
+	width: 45%;
+	height: 380px;
+	float: right;
+	background-color: lightblue;
+	
+}
+/*绿色通道文字1*/
+#greenChan_font{
+	font-size: 18px;
+	color: green;
+}
+/*绿色通道文字2*/
+#greenChan_font2{
+	font-size: 30px;
+	color: red;
+}
+#yuyue{
+	font-size: 25px;
+	color: red;
+	
+}
+/*绿色通道input标题*/
+.form_title{
+	font-size: 18px;
+}
+.form_title span{
+	color: red;
+}
+/*绿色通道input框*/
+.gcform_input{
+	border-radius:8px;
+	border: 0.5px solid #DBDBDB;
+	outline:none;
+	
+}
+
+/*预约按钮样式*/
+.yuyueBt{
+	font-size: 20px;
+	color: white;	
+	margin: 0 auto;
+	background: red;
+	border:0px;
+	height:40px;
+	width:130px;
+	border-radius:8px;
+}
+/*bg不成功不收费*/
+.bgImgDiv2{
+	background-color: #EEEEEE;
+}

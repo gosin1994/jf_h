@@ -1,0 +1,492 @@
+<!--
+	author：龚鑫
+	  date：2018-8-28 16:00
+	 email：gx1008666@163.com
+-->
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<!--第一步：告诉浏览器，当前页面支持响应式-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!--第二步：引入CSS样式-->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		
+		<!--第三步：引入jQuery文件，注意：必须在bootstrap之前引入-->
+		<script src="js/jquery-1.11.3.min.js"></script>
+		
+		<!--第四不：引入bootstrap库文件-->
+		<script src="js/bootstrap.min.js"></script>
+		
+		<!--引入本地css-->
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		
+		
+	</head>
+	<body>
+		<!--<div class="container-fluid" >-->
+			<!--网页顶部-->
+			<div class="row">
+				<div class="col-md-4">
+					<img width="70%" height="70%" src="img/jtlogo.png"/>
+				</div>
+				<div class="col-md-4">
+					<!--<img src="img/header.jpg"/>-->
+				</div>
+				<div class="col-md-4   " style="padding-top: 20px; " >
+					<ul class="list-inline text-right">
+						<li><a href="#">登陆</a></li>
+						<li><a href="#">注册</a></li>
+						<li>咨询热线：0755-32831222</li>
+					</ul>
+				</div>
+			</div>
+			
+			<!--网页导航栏-->
+			<div   class="navigationDiv">
+				<nav class="navbar navbar-default">
+					  <div class="container-fluid">
+					    <!-- Brand and toggle get grouped for better mobile display -->
+					    
+					    <div class="navbar-header">
+					    	
+					    	<!--<a class="navbar-brand" href="#">
+						        <img width="200%" height="200%" alt="JTlogo" src="img/jtlogo.png">
+						     </a>-->
+					    	
+					      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					        <span class="sr-only">Toggle navigation</span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					      </button>
+					      <a class="navbar-brand" href="#">深圳人才引进入户网</a>
+					    </div>
+					
+					    <!-- Collect the nav links, forms, and other content for toggling -->
+					    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					      <ul class="nav navbar-nav">
+					        <li class="active"><a href="#">积分制入户<sup style="color: red;">HOT</sup><span class="sr-only">(current)</span></a></li>
+					        <li><a href="#">应届生入户<sup style="color: red;">HOT</sup></a></li>
+					        <li><a href="#">留学生入户</a></li>
+					        <li><a href="#">核准制入户</a></li>
+					        <li><a href="#">人才引进入户</a></li>
+					        <li><a href="#">家属随迁入户</a></li>
+					        <li class="dropdown">
+					          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">更多<span class="caret"></span></a>
+					          <ul class="dropdown-menu">
+					            <li><a href="#">补贴事宜</a></li>
+					            <li><a href="#">绿色通道</a></li>
+					            <li><a href="#">培训课程</a></li>
+					            <li><a href="#">关于我们</a></li>
+					          </ul>
+					        </li>
+					      </ul>
+					      
+					      <form class="navbar-form navbar-right ">
+					        <div class="form-group text-right">
+					          <input type="text" class="form-control" placeholder="请输入您想咨询的内容">
+					        </div>
+					        <button type="submit" class="btn btn-default">搜索</button>
+					      </form>
+					    
+					    </div><!-- /.navbar-collapse -->
+					  </div><!-- /.container-fluid -->
+					</nav>
+			</div>
+			<!--=========轮播图开始===========-->
+			<div class="viewpager">
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+					  <!-- Indicators -->
+					  <ol class="carousel-indicators">
+					    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+					  </ol>
+					
+					  <!-- Wrapper for slides -->
+					  <div class="carousel-inner" role="listbox">
+					    <div class="item active">
+					      <img src="img/viewpager/3.jpg" alt="轮播图1">
+					      <div class="carousel-caption">
+					        ...
+					      </div>
+					    </div>
+					    <div class="item">
+					      <img  src="img/viewpager/2.jpg" alt="轮播图2">
+					      <div class="carousel-caption">
+					        ...
+					      </div>
+					    </div>
+					    <div class="item">
+					      <img src="img/viewpager/1.jpg" alt="轮播图3">
+					      <div class="carousel-caption">
+					        ...
+					      </div>
+					    </div>
+					    
+					    <div class="item">
+					      <img src="img/viewpager/4.jpg" alt="轮播图4">
+					      <div class="carousel-caption">
+					        ...
+					      </div>
+					    </div>
+					    
+					    <div class="item">
+					      <img src="img/viewpager/5.jpg" alt="轮播图5">
+					      <div class="carousel-caption">
+					        ...
+					      </div>
+					    </div>
+					    
+					  </div>
+					
+					  <!-- Controls -->
+					  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+					    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					    <span class="sr-only">Previous</span>
+					  </a>
+					  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+					    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					    <span class="sr-only">Next</span>
+					  </a>
+					</div>
+			</div>
+			<!--=========轮播图结束===========-->
+			
+			<!--form表单开始-->
+			<form >
+			<div class="bgdiv1"><!--测评背景div1-->
+			<!--=========入户测评开始===========-->
+			<div class="appraisal ">
+				<div class="block" style="position: relative; margin-top:30px;">
+			    <div class="block-title">深圳市2018年入户资格在线测评系统</div>
+			    
+			    <!--总form表单-->
+			    <div class="totalForm">
+			    	
+			    	<!--==左边测评开始==-->
+			    	<div class="totalForm_left">
+			    		<div class="jf_input">
+					  <div class="title">个人姓名：</div>
+					  <div class="form-control-input">
+			            <input class="form-control-input" type="text" name="msg_username" class="msg_text" id="msg_username" placeholder="请输入您的姓名">
+				      </div>
+					  <div style="clear: both"></div>
+					  <div class="title">您的年龄：</div>
+					  <div class="form-control-input">
+			            <input class="form-control-input" type="text" name="msg_other" class="msg_other" title="年龄" placeholder="请输入您的年龄">
+				      </div>
+					  <div style="clear: both"></div>
+					  <div class="title">文化程度：</div>
+					  <div class="form-control-input">
+			            <select type="text" name="msg_other" class="form-control msg_other" title="文化" placeholder="请选择">
+						  <option value="全日制本科">全日制本科</option>
+						  <option value="全日制专科">全日制专科</option>
+						  <option value="全日制研究生及以上">全日制研究生及以上</option>
+						  <option value="非全日制本科">非全日制本科</option>
+						  <option value="非全日制专科">非全日制专科</option>
+						  <option value="留学生入户">留学生入户</option>
+						  <option value="高中-中专及以下">高中-中专及以下</option>
+						  <option value="其它">其它</option>
+						</select>
+				      </div>
+					  <div style="clear: both"></div>
+					  <div class="title">社保年限：</div>
+					  <div class="form-control-input">
+			            <select type="text" name="msg_other" class="form-control msg_other" title="社保" placeholder="请选择">
+						  <option value="累积未满1年">累积未满1年</option>
+						  <option value="累积满1年">累积满1年</option>
+						  <option value="累积满2年">累积满2年</option>
+						  <option value="累积满3年">累积满3年</option>
+						  <option value="累积满4年">累积满4年</option>
+						  <option value="累积满5年">累积满5年</option>
+						  <option value="其他">其他</option>
+						</select>
+				      </div>
+					  <div style="clear: both"></div>
+					  <div class="title">婚育状况：</div>
+					  <div class="form-control-input">
+			            <select type="text" name="msg_other" class="form-control msg_other" title="婚育" placeholder="请选择">
+						  <option value="未婚未育">未婚未育</option>
+						  <option value="已婚未育">已婚未育</option>
+						  <option value="已婚已育">已婚已育</option>
+						  <option value="已婚超生">已婚超生</option>
+						  <option value="其它">其它</option>
+						</select>
+				      </div>
+					  <div style="clear: both"></div>
+					  <div class="title">接收手机：</div>
+					  <div class="form-control-input">
+			            <input class="form-control-input" type="text" name="msg_userphone" class="msg_text" id="msg_userphone" placeholder="请输入您的手机">
+				      </div>
+					  <div style="clear: both"></div>
+					  <div style="font-size: 14px; height: 30px; line-height:30px; color:#D11D43;">请认真填写，各选项将直接影响你最后的积分情况。</div>
+					  <div class="formBtDiv"><input class="formbt" type="button" value="免费测评" /></div>
+					</div>
+			    	</div>
+			    	<!--==左边测评结束==-->
+			    	<!--==右边滚动开始==-->
+			    	<div class="totalForm_right">
+			    		<div style="font-size:16px;">最新查询结果</div>
+			   <div style="padding-left:20px; font-size:14px; height:25px; line-height:25px;">目前已有<span style="color:#C00">853471</span>次查询：</div>
+			   <!--新闻滚动-->
+			   <div >
+			    <style type="text/css">
+			ul,li{margin:0;padding:0}
+			#scrollDiv{width:430px;height:300px;min-height:15px;line-height:15px;overflow:hidden; padding-left:10px; margin-top:10px;}
+			#scrollDiv li{height:25px;padding-left:10px; font-size:12px;}
+			.news_roll ul li .name{ width: 50px;float: left;}
+			.news_roll ul li .talk{ width: 50px;float: left;}
+			.news_roll ul li .phone{ width: 80px;float: left;}
+			.news_roll ul li .fenshu{ width: 70px;float: left;}
+			.news_roll ul li .zhuangtai{ width: 80px;float: left;}
+			.news_roll ul li .link{ width: 80px;float: left;}
+			</style>
+			<script type="text/javascript">
+			//滚动插件
+			(function($){
+			$.fn.extend({
+			        Scroll:function(opt,callback){
+			                //参数初始化
+			                if(!opt) var opt={};
+			                var _this=this.eq(0).find("ul:first");
+			                var        lineH=_this.find("li:first").height(), //获取行高
+			                        line=opt.line?parseInt(opt.line,20):parseInt(this.height()/lineH,10), //每次滚动的行数，默认为一屏，即父容器高度
+			                        speed=opt.speed?parseInt(opt.speed,10):800, //卷动速度，数值越大，速度越慢（毫秒）
+			                        timer=opt.timer?parseInt(opt.timer,10):8000; //滚动的时间间隔（毫秒）
+			                if(line==0) line=1;
+			                var upHeight=0-line*lineH;
+			                //滚动函数
+			                scrollUp=function(){
+			                        _this.animate({
+			                                marginTop:upHeight
+			                        },speed,function(){
+			                                for(i=1;i<=line;i++){
+			                                        _this.find("li:first").appendTo(_this);
+			                                }
+			                                _this.css({marginTop:0});
+			                        });
+			                }
+			                //鼠标事件绑定
+			                _this.hover(function(){
+			                        clearInterval(timerID);
+			                },function(){
+			                        timerID=setInterval("scrollUp()",timer);
+			                }).mouseout();
+			        }        
+			})
+			})(jQuery);
+			
+			$(document).ready(function(){
+			        $("#scrollDiv").Scroll({line:1,speed:600,timer:1000});
+			});
+			</script>
+			<div id="scrollDiv" class="news_roll">
+			  <ul>
+			    <li><span class="name">刘**</span><span class="talk">查询</span><span class="phone">138***51*</span><span class="fenshu">积分84</span><span class="zhuangtai">不够分数</span><a href="javascript:void(0)" onClick="doyoo.util.openChat('g=10075334');return false;" target="_blank" style="color:#F01662" class="link">[解决方案]</a></li>
+			    <li><span class="name">卫**</span><span class="talk">查询</span><span class="phone">134***45*</span><span class="fenshu">积分109</span><span class="zhuangtai">够分数</span><a href="javascript:void(0)" onClick="doyoo.util.openChat('g=10075334');return false;" target="_blank" style="color:#F01662" class="link">[协助入户]</a></li>
+			    <li><span class="name">张**</span><span class="talk">查询</span><span class="phone">136***64*</span><span class="fenshu">积分97</span><span class="zhuangtai">不够分数</span><a href="javascript:void(0)" onClick="doyoo.util.openChat('g=10075334');return false;" target="_blank" style="color:#F01662" class="link">[解决方案]</a></li>
+			    <li><span class="name">胡**</span><span class="talk">查询</span><span class="phone">188***49*</span><span class="fenshu">积分115</span><span class="zhuangtai">够分数</span><a href="javascript:void(0)" onClick="doyoo.util.openChat('g=10075334');return false;" target="_blank" style="color:#F01662" class="link">[协助入户]</a></li>
+			    <li><span class="name">陈**</span><span class="talk">查询</span><span class="phone">136***88*</span><span class="fenshu">积分76</span><span class="zhuangtai">不够分数</span><a href="javascript:void(0)" onClick="doyoo.util.openChat('g=10075334');return false;" target="_blank" style="color:#F01662" class="link">[解决方案]</a></li>
+			    <li><span class="name">黄**</span><span class="talk">查询</span><span class="phone">183***72*</span><span class="fenshu">积分92</span><span class="zhuangtai">不够分数</span><a href="javascript:void(0)" onClick="doyoo.util.openChat('g=10075334');return false;" target="_blank" style="color:#F01662" class="link">[解决方案]</a></li>
+			    <li><span class="name">洪**</span><span class="talk">查询</span><span class="phone">135***99*</span><span class="fenshu">积分125</span><span class="zhuangtai">够分数</span><a href="javascript:void(0)" onClick="doyoo.util.openChat('g=10075334');return false;" target="_blank" style="color:#F01662" class="link">[协助入户]</a></li>
+			    <li><span class="name">何**</span><span class="talk">查询</span><span class="phone">135***83*</span><span class="fenshu">积分116</span><span class="zhuangtai">够分数</span><a href="javascript:void(0)" onClick="doyoo.util.openChat('g=10075334');return false;" target="_blank" style="color:#F01662" class="link">[协助入户]</a></li>
+			    <li><span class="name">许**</span><span class="talk">查询</span><span class="phone">134***43*</span><span class="fenshu">积分83</span><span class="zhuangtai">不够分数</span><a href="javascript:void(0)" onClick="doyoo.util.openChat('g=10075334');return false;" target="_blank" style="color:#F01662" class="link">[解决方案]</a></li>
+			    <li><span class="name">吴**</span><span class="talk">查询</span><span class="phone">133***81*</span><span class="fenshu">积分94</span><span class="zhuangtai">不够分数</span><a href="javascript:void(0)" onClick="doyoo.util.openChat('g=10075334');return false;" target="_blank" style="color:#F01662" class="link">[解决方案]</a></li>
+			    <li><span class="name">温**</span><span class="talk">查询</span><span class="phone">137***73*</span><span class="fenshu">积分108</span><span class="zhuangtai">够分数</span><a href="javascript:void(0)" onClick="doyoo.util.openChat('g=10075334');return false;" target="_blank" style="color:#F01662" class="link">[协助入户]</a></li>
+			    <li><span class="name">罗**</span><span class="talk">查询</span><span class="phone">131***05*</span><span class="fenshu">积分80</span><span class="zhuangtai">不够分数</span><a href="javascript:void(0)" onClick="doyoo.util.openChat('g=10075334');return false;" target="_blank" style="color:#F01662" class="link">[解决方案]</a></li>
+			  </ul>
+			</div>
+			    </div>
+			    	</div>
+			    	<!--==右边滚动结束==-->
+			    </div>
+			      <!--总form表单结束-->
+			    <!--<p style="position: relative;z-index: 1;text-align: center;color: #fff;margin-top: 40px;">您的评测结果将以短信形式通知！（由于通讯原因，或有延迟）请耐心等待。
+			      <br><br></p>-->
+			    <div class="" style="position: absolute;bottom: 0;z-index:0;width: 100%;height: 260px; background:url(images/nav-bg.jpg) 50% 0/auto auto repeat-y"></div>
+			  </div>
+
+			</div><!--//appraisal-->
+			
+			</div><!--//bgdiv1-->
+			<div class="bgdiv2">
+			</div><!--//div2-->
+			</form>
+			<!--form表单结束-->
+			<!--=========入户测评结束===========-->
+			
+			
+			<!--申请条件图片-->
+			<div class="bgImgDiv">
+				<center><img   src="img/bg/applyCondition.jpg" />		</center>		
+				
+			</div>
+			<!--//申请条件图片-->
+			<!--==绿色通道开始==-->
+			<div class="greenChan">
+				<!--左边文字-->
+				<div class="greenChan_left">
+					<br /><br />
+					<span  id="greenChan_font">
+					<p>预约积分入户绿色通道</p>
+					<p><省事><省时></p> 
+					<p><自考课程均享受8.5折特惠><一次毕业率高达96.7%></p><br />
+					</span>
+					
+					<hr style="width:50%;height:15px;border:none;border-top:1px solid #555555;" />
+					<span  id="greenChan_font2">
+					<p>全国免费咨询热线</p>
+					<p>0755-32831222</p>
+					</span>
+				</div>
+				
+				<!--右边表单-->
+				<div class="greenChan_right">
+					<form>
+						<br /><br />
+						<span id="yuyue">赶快预约!今日名额仅剩<span style="font-size: 50px;">&nbsp;7&nbsp;</span>名</span><br /><br />
+						<div class="form_title">您的姓名<span >*</span>:
+							<input class="gcform_input" type="text" maxlength="4"  placeholder="请输入您的姓名" /><br /><br />
+						</div>
+						<div class="form_title">您的电话<span >*</span>:
+							<input class="gcform_input" type="text" maxlength="11"  placeholder="请输入您的电话" /><br /><br />
+						</div>
+						<div class="form_title">您的微信<span >*</span>:
+							<input class="gcform_input" type="text" maxlength="20" placeholder="请输入您的微信或QQ" />
+						</div>
+						<br />
+						<input class="yuyueBt" type="button" value="立即预约" />
+					</form>
+				</div>
+			</div>
+			<!--==绿色通道结束==-->
+			
+			<!--不成功不收费图片-->
+			<div class="bgImgDiv2">
+				<center><img   src="img/bg/success.jpg" />		</center>		
+				
+			</div>
+			<!--//不成功不收费图片-->
+			<!--优势图片开始-->
+			<div class="bgImgDiv3">
+				<center><img   src="img/bg/superiority.jpg" />		</center>		
+				
+			</div>
+			<!--//优势图片结束-->
+			
+			<!--补贴图片开始-->
+			<div class="bgImgDiv4">
+				<center><img   src="img/bg/butie.jpg" />		</center>		
+				
+			</div>
+			<!--//补贴图片结束-->
+			
+			<!--服务图片开始-->
+			<div class="bgImgDiv5">
+				<center><img   src="img/bg/service.jpg" />		</center>		
+				
+			</div>
+			<!--//服务图片结束-->
+			
+			<!--热门商品-->
+			<div class="ceping">
+				
+				<!--<h2>热门商品   <img src="img/title2.jpg"/></h2>-->
+			</div>
+			<!--商品信息-->
+			
+			<div class="row">
+				<div class="col-md-2 ">
+					<img src="img/big01.jpg"/>
+				</div>
+				<div class="col-md-10">
+					<div class="row">
+						<div class="col-md-6 text-center">
+							<img src="img/middle01.jpg "/>
+							
+							
+						</div>
+						<div class="col-md-2 text-center">
+							<img src="img/small03.jpg"/><br />
+							<a href="#">智能电饭煲</a><br />
+							<p style="color: red;">&yen;599.00</p>
+						</div>
+						<div class="col-md-2 text-center">
+							<img src="img/small03.jpg"/><br />
+							<a href="#">智能电饭煲</a><br />
+							<p style="color: red;">&yen;599.00</p>
+						</div>
+						<div class="col-md-2 text-center">
+							<img src="img/small03.jpg"/><br />
+							<a href="#">智能电饭煲</a><br />
+							<p style="color: red;">&yen;599.00</p>
+						</div>
+						
+					</div>
+					<div class="row">
+						<div class="col-md-2 text-center">
+							<img src="img/small03.jpg"/><br />
+							<a href="#">智能电饭煲</a><br />
+							<p style="color: red;">&yen;599.00</p>
+						</div>
+						<div class="col-md-2 text-center">
+							<img src="img/small03.jpg"/><br />
+							<a href="#">智能电饭煲</a><br />
+							<p style="color: red;">&yen;599.00</p>
+						</div>
+						<div class="col-md-2 text-center">
+							<img src="img/small03.jpg"/><br />
+							<a href="#">智能电饭煲</a><br />
+							<p style="color: red;">&yen;599.00</p>
+						</div>
+						<div class="col-md-2 text-center">
+							<img src="img/small03.jpg"/><br />
+							<a href="#">智能电饭煲</a><br />
+							<p style="color: red;">&yen;599.00</p>
+						</div>
+						<div class="col-md-2 text-center">
+							<img src="img/small03.jpg"/><br />
+							<a href="#">智能电饭煲</a><br />
+							<p style="color: red;">&yen;599.00</p>
+						</div>
+						<div class="col-md-2 text-center">
+							<img src="img/small03.jpg"/><br />
+							<a href="#">智能电饭煲</a><br />
+							<p style="color: red;">&yen;599.00</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--底部正品保证图片-->
+			<div class="row">
+				<img src="img/footer.jpg"/>
+			</div>
+			<!--底部超链接-->
+			<div class="row">
+				<ul class="text-center list-inline">
+					<li><a href="#">关于我们</a></li>
+					<li><a href="#">招贤纳士 </a></li>
+					<li><a href="#">联系我们</a></li>
+					<li><a href="#">法律声明</a></li>
+					<li><a href="#">友情链接</a></li>
+					<li><a href="#">支付方式</a></li>
+					<li><a href="#">配送方式</a></li>
+					<li><a href="#">服务声明</a></li>
+					<li><a href="#">广告声明</a></li>
+				</ul>
+			</div>
+			<!--版权声明-->
+			<div class="row text-center">
+				Copyright © 2005-2016 传智商城 版权所有
+			</div>
+		<!--</div>-->
+	</body>
+</html>
