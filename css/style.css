@@ -196,6 +196,67 @@
 	height: 50px;
 	background-color: #F6EEE5;
 }
+
+/*学历部分开始*/
+
+/*积分不够*/
+.jf_bugou{
+	width: 100%;
+	height: 120px;
+	font-size: 80px;
+	text-align: center;
+	background-color: white;
+	color: blue;
+}
+/*三个button*/
+.3button{
+	margin: 0 auto;
+}
+.button_1{
+	width: 203px;
+	height: 120px;
+	font-size: 25px;
+	font-family: "微软雅黑";
+	color: white;
+	background-color: #21BA85;
+	border-radius:8px;
+	border: none;
+}
+.button_1:hover{
+	background-color: #000000;
+}
+
+.button_2{
+	width: 203px;
+	height: 120px;
+	font-size: 25px;
+	font-family: "微软雅黑";
+	color: white;
+	background-color: #D65156;
+	border-radius:8px;
+	border: none;
+}
+.button_2:hover{
+	background-color: #000000;
+}
+
+
+.button_3{
+	width: 203px;
+	height: 120px;
+	font-size: 25px;
+	font-family: "微软雅黑";
+	color: white;
+	background-color: #FEB101;
+	border-radius:8px;
+	border: none;
+}
+.button_3:hover{
+	background-color: #000000;
+}
+
+/*学历部分结束*/
+
 /*footer样式*/
 .footer{
 	width: 100%;
