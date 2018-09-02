@@ -199,16 +199,179 @@
 
 /*学历部分开始*/
 
+/*banner开始*/
+.banner{width:100%;}
+.banner a{
+    display: block;
+    overflow: hidden;
+}
+.banner a img{
+    width:100%;
+}
+.banner a .bg{
+    float: left;
+}
+.banner a .center{
+    position: absolute;
+}
+.banner img {
+    border: 0;
+    display: block;
+}
+
+
+/*banner结束*/
+
+
+/*全民助学让人人都拥有本科*/
+.con_box01{
+	width:100%;
+	padding:20px 0;
+	background-color: #e9eaeb;
+}
+/*标题和文字 END*/
+.center img {
+    border: 0;
+    display: block;
+}
+.center a {
+    text-decoration: none;
+    border: 0;
+    outline: none;
+}
+.center div{
+    display: block;
+}
+
+.con_box01_bx1{
+    width:1000px;
+    margin:20px auto;
+}
+.con_box01_bx1 li{
+    position: relative;
+    float: left;
+    margin-right: 13px;
+    width:240px;
+    height:310px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding:6px;
+    overflow: hidden;
+}
+.con_box01_bx1 li:hover .hide{
+    top:0;
+}
+.con_box01_bx1 .list_1{
+    background-color: #feb901;
+}
+.con_box01_bx1 .list_2{
+    background-color: #2dc1ff;
+}
+.con_box01_bx1 .list_3{
+    background-color: #f36f7b;
+}
+.con_box01_bx1 .list_4{
+    background-color: #34cda0;
+    margin-right:0;
+}
+.con_box01_bx1 .list_4 p{
+    width:180px;
+    margin:0 auto;
+    border-top: #fff dashed 1px;
+    text-align:left;
+}
+.con_box01_bx1 .list_4 .hide{
+    padding-top: 110px;
+}
+.con_box01_bx1 .list_4 .hide a{
+    margin:0 auto 30px;
+}
+.con_box01_bx1 li div{
+    border:2px solid #fff;
+    height:294px;
+}
+.con_box01_bx1 li img{
+    margin:0 auto;
+    height:68px;
+}
+.con_box01_bx1 li h3{
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 10px;
+    font-weight:bold;
+}
+.con_box01_bx1 li h4{
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    padding-top: 10px;
+    font-weight:bold;
+    width:180px;
+    margin:0 auto;
+    border-top: #fff dashed 1px;
+}
+.con_box01_bx1 li p{
+    font-size: 16px;
+    text-align: center;
+    color: #272636;
+    padding: 10px;
+    line-height:30px;
+}
+.con_box01_bx1 li .hide{
+    position: absolute;
+    left:0;
+    top:310px;
+    width:100%;
+    height:310px;
+    background-color:#071d26;
+    padding-top:40px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    transition:all 0.5s;
+    -o-transition:all 0.5s;
+    -moz-transition:all 0.5s;
+    -webkit-transition:all 0.5s;
+    border:none;
+	
+}
+.con_box01_bx1 li .hide a{
+    width:100px;
+    line-height:30px;
+    margin:0 auto 21px;
+    background: #ff6362;
+    color: #fff;
+    text-align: center;
+    font-size:16px;
+    display: block;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px;
+}
+.con_box01_bx1 li .hide a:hover{
+    color: #f0ff00;
+    text-decoration:underline;
+}
+/*第二屏结束*/
+
+
+
+
+
+
 /*积分不够*/
 .jf_bugou{
 	width: 100%;
 	height: 120px;
-	font-size: 80px;
+	font-size: 70px;
+	font-family: "微软雅黑";
 	text-align: center;
 	background-color: white;
 	color: blue;
 }
-/*三个button*/
+/*三个提升方案button开始*/
 .3button{
 	margin: 0 auto;
 }
@@ -254,6 +417,143 @@
 .button_3:hover{
 	background-color: #000000;
 }
+
+.button_4{
+	width: 270px;
+	height: 50px;
+	font-size: 18px;
+	font-family: "微软雅黑";
+	color: white;
+	background-color: #861717;
+	border-radius:5px;
+	border: none;
+}
+.button_4:hover{
+	background-color: #D65156;
+}
+/*三个提升方案button结束*/
+
+/*推荐院校滚动logo*/
+.schoolLogo{
+	overflow: hidden; 
+	height: 150px; 
+	width: 80%; 
+	margin: 0 auto;
+	border-top: 2px solid blue;
+	border-bottom:2px solid blue ;
+}
+/* 热门好专业才配的上名校 */
+.major_box{
+    width:100%;
+}
+.major{
+    width:1200px;
+    margin:0 auto;
+    padding:20px 0 55px 0;
+}
+.major h2{
+    line-height:100px;
+    text-align: center;
+    color: #232222;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.major h2 strong{
+    color:#0060e5;
+    font-weight:bold;
+}
+.major p{
+    background-color:#478ceb;
+    color:#fffefe;
+    font-size:26px;
+    font-weight:bold;
+    text-align: center;
+    width:1158px;
+    margin: 0 auto;
+    margin-bottom:20px;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    line-height:55px;
+}
+.major p em{
+    font-weight:bold;
+    color:#141414;
+    font-style: normal;
+}
+.major li{
+    float: left;
+    margin:0 8px 11px 0;
+}
+.major li a{
+    display: block;
+    width:192px;
+    height:47px;
+    line-height:47px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-break:break-all;
+    text-overflow:ellipsis;
+    -o-text-overflow:ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    border:2px solid #8196a8;
+    border-radius:3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    background-color:#fff;
+    font-size:20px;
+    color:#1a1a1a;
+    font-family:'方正准圆简体';
+    text-align: center;
+}
+.major li a:hover{
+    background-color:#1594ff;
+    border:2px solid #1594ff;
+    color:#fefefe;
+}
+.major li .no_marginR{
+    margin-right:0;
+}
+.major li .more{
+    background:#0060e5 url(../images/20170331/more.png) no-repeat 170px center;
+    color:#fff;
+    text-align: left;
+    padding-left:5px;
+    border:2px solid #0060e5;
+}
+.major li .more:hover{
+    background-color:#0b3d82;
+    border:2px solid #0b3d82;
+}
+
+.major_box a, input, textarea, select {
+    text-decoration: none;
+    border: 0;
+    outline: none;
+}
+
+.major_box ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+.clearfix {
+    zoom: 1;
+}
+/* 热门好专业才配的上名校 END */
+
+
+
+
 
 /*学历部分结束*/
 
