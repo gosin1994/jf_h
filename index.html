@@ -27,6 +27,116 @@
 		
 		<!--引入favicon-->
 		<link rel="shortcut icon" href="img/logo/favicon.ico" type="image/x-icon">
+
+<script type="text/javascript">
+		/*提交测评表单*/
+		function submitForm() {
+			var name = $("#name").val();
+			var phone = $("#phone").val();
+			var age = $("#age").val();
+			var educationLevel = $("#educationLevel").val();
+			var insureYear = $("#insureYear").val();
+			
+			var isPhoneValid = false;
+		if (name == '' || name == '请输入姓名'
+				|| !isUsername(name)) {
+			alert('请填写真实姓名！');
+			$("#name").focus();
+			return false;
+		}
+		if ($("#phone").val() == '' || $("#phone").val() == '请输入手机'
+				|| !isPhone($("#phone").val())) {
+			alert('请填写真实手机号码！');
+			$("#phone").focus();
+			return false;
+		} else {
+			checkPhoneUniqueness($("#phone").val())
+
+			if (!isPhoneValid) {
+				return false;
+			}
+		}
+
+		
+		if ($("#age").val() == '-1') {
+			alert('请选择年龄！');
+			$("#age").focus();
+			return false;
+		}
+
+		/*if ($("#insureYear").val() == '' || $("#insureYear").val() == '请输入社保年限'
+				|| !isNum($("#insureYear").val())) {
+			alert('请填写真实社保年限！');
+			$("#insureYear").focus();
+			return false;
+		}*/
+				
+		if ($("#insureYear").val() == '-1') {
+			alert('请选择社保年限！');
+			$("#insureYear").focus();
+			return false;
+		}
+
+		if ($("#educationLevel").val() == '-1') {
+			alert('请选择学历！');
+			$("#educationLevel").focus();
+			return false;
+		}
+
+		return true;
+	}
+
+	/* function isUsername(temp) 
+	 { 
+	 var re = /^[\u4E00-\u9FA5]{1,8}$/; 
+	 if(re.test(temp)) return true; 
+	 return false; 
+	 } */
+	function isUsername(temp) {
+		/*  var re = /^[\u4E00-\u9FA5]{1,8}$/; 
+		 if(re.test(temp)) return true; 
+		 return false;  */
+		return true;
+	}
+
+	function isPhone(temp) {
+		var re = /^1[0-9]{10}$/;
+		if (re.test(temp))
+			return true;
+		return false;
+	}
+
+	function isNum(temp) {
+		var re = /^[1-9][0-9]{0,1}$/;
+		if (re.test(temp))
+			return true;
+		return false;
+	}
+
+	function checkPhoneUniqueness(phone) {
+		$.ajax({
+			async : false,
+			type : 'GET',
+			url : "${contextPath}/o/customer/isPhoneExist",
+			data : {
+				phone : phone
+			},
+			success : function(data) {
+				if (data) {
+					alert("该手机已经存在");
+					isPhoneValid = false;
+				} else {
+					isPhoneValid = true;
+				}
+			}
+		});
+	}
+		
+		
+	</script>		
+		
+		
+		
 	</head>
 	<body >
 		<!--<div class="container-fluid" >-->
@@ -168,7 +278,7 @@
 			<!--=========轮播图结束===========-->
 			
 			<!--form表单开始-->
-			<form >
+			<form method="get" action="www.baidu.com">
 			<div class="bgdiv1"><!--测评背景div1-->
 			<!--=========入户测评开始===========-->
 			<div class="appraisal ">
@@ -243,7 +353,9 @@
 					  <div style="clear: both"></div>
 					 
 					  <div style="font-size: 14px; height: 30px; line-height:30px; color:#D11D43;">请认真填写，各选项将直接影响你最后的积分情况。</div>
-					  <div class="formBtDiv"><input class="formbt" type="button" value="免费测评" /></div>
+					  <div class="formBtDiv">
+					  	<input class="formbt" onclick="submitForm();beforeSubmit()" type="button" value="免费测评" />
+					  </div>
 					</div>
 			    	</div>
 			    	<!--==左边测评结束==-->
@@ -326,7 +438,7 @@
 			      <!--总form表单结束-->
 			    <!--<p style="position: relative;z-index: 1;text-align: center;color: #fff;margin-top: 40px;">您的评测结果将以短信形式通知！（由于通讯原因，或有延迟）请耐心等待。
 			      <br><br></p>-->
-			    <div class="" style="position: absolute;bottom: 0;z-index:0;width: 100%;height: 260px; background:url(img/xiaoqu/nav-bg.jpg) 50% 0/auto auto repeat-y"></div>
+			    <!--<div class="" style="position: absolute;bottom: 0;z-index:0;width: 100%;height: 260px; background:url(img/xiaoqu/nav-bg.jpg) 50% 0/auto auto repeat-y"></div>-->
 			  </div>
 
 			</div><!--//appraisal-->
@@ -1006,9 +1118,9 @@
 		</div>
 		</center>
 		
-		
-			
 			<!--===========页脚结束=============-->
+			
+			
 			<!--==============百度商桥开始============-->
 			<!--<script type="text/javascript"> 
 				var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F1e20cecd187e63d5a4a492a982b7f4cb' type='text/javascript'%3E%3C/script%3E")) 
@@ -1018,4 +1130,12 @@
 			
 		<!--</div>-->
 	</body>
+	
+	<script type="text/javascript">
+	
+
+	function beforeSubmit() {
+
+</script>
+	
 </html>

@@ -522,7 +522,7 @@
 .schoolLogo{
 	overflow: hidden; 
 	height: 150px; 
-	width: 80%; 
+	width: 100%; 
 	margin: 0 auto;
 	border-top: 2px solid blue;
 	border-bottom:2px solid blue ;
